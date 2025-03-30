@@ -1,3 +1,6 @@
-node_modules
+# Common for full stack apps
+node_modules/
 .env
 .DS_Store
+dist/
+build/
