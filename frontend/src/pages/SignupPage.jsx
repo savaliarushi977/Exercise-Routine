@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import API from '../api/api';
 import axios from 'axios';
 
 const SignupPage = () => {
@@ -16,7 +17,7 @@ const SignupPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/auth/signup', formData);
+      await API.post('/auth/signup', formData);;
       alert('Signup successful! Please sign in.');
       navigate('/signin');
     } catch (err) {

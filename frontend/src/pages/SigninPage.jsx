@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { setToken } from '../utils/auth';
 
 const SigninPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -16,9 +17,9 @@ const SigninPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8000/api/auth/signin', formData);
-      const { token } = res.data;
-      localStorage.setItem('token', token);
+      const res = await API.post('/auth/signin', formData);
+      const token = res.data.token;
+      setToken(res.data.token);
       alert('Login successful!');
       navigate('/');
     } catch (err) {
