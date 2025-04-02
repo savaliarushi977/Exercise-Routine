@@ -61,13 +61,11 @@ const HomePage = () => {
                   {day.exercises.map((ex, idx) => (
                     <div key={idx} className="bg-white rounded-lg p-4 shadow-md flex flex-col items-center">
                       {ex.mediaUrl && (
-                          <img
-                          src={ex.mediaUrl.includes('drive.google.com') 
-                            ? ex.mediaUrl.replace('/file/d/', '/uc?export=view&id=').replace('/view?usp=sharing', '') 
-                            : ex.mediaUrl
-                          }
-                          alt={ex.name}
-                          className="h-32 object-cover mb-2 rounded"/>
+                        <img
+                        src={encodeURI(ex.mediaUrl)}
+                        alt={ex.name}
+                        className="h-32 object-cover mb-2 rounded"
+                      />
                       )}
                       <h5 className="font-semibold">{ex.name}</h5>
                       <p className="text-sm text-gray-600">{ex.sets} sets x {ex.reps} reps</p>
