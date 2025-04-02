@@ -27,16 +27,16 @@ A full-stack fitness application that generates weekly personalized workout rout
 ## 📸 UI Screenshots
 
 ### 🔐 Login Page
-![Login Page](./screenshots/Screenshot%202025-03-31%20at%2012.54.25%20PM.png)
+![Login Page](./screenshots/login.png)
 
 ### 📝 Signup Page
-![Signup Page](./screenshots/Screenshot%202025-03-31%20at%2012.54.56%20PM.png)
+![Signup Page](./screenshots/signup.png)
 
 ### ⚙️ Preference Selection
-![Preferences](./screenshots/Screenshot%202025-03-31%20at%2012.53.58%20PM.png)
+![Preferences](./screenshots/home.png)
 
 ### 📆 Weekly Routine with Exercise Images
-![Routine Display](./screenshots/Screenshot%202025-04-02%20at%209.12.13%E2%80%AFPM.png)
+![Routine Display](./screenshots/routine.png)
 
 ---
 
