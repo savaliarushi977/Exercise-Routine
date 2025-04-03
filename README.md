@@ -1,4 +1,4 @@
-# 🏋️‍♂️ Exercise Routine Web App
+# 🏋️‍♂️ Fitness Planner Web App
 
 A full-stack fitness application that generates weekly personalized workout routines based on user preferences.
 
@@ -46,7 +46,6 @@ A full-stack fitness application that generates weekly personalized workout rout
 - Image filenames **exactly match the exercise names** (e.g., `Pushups.webp`).
 - This approach is ideal for local development and GitHub-hosted demos.
 
-> ⚠️ For deployment to Netlify/Vercel, consider using Cloudinary or Imgur for hosting images.
 
 ---
 
